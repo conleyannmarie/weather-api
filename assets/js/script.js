@@ -1,12 +1,23 @@
 //beginning variables
-const userFormEl = document.querySelector("#city");
-const searchBtn = document.querySelector(".search");
-
-const cityResult = userFormEl.value;
-console.log(cityResult);
+function initPage() {
+const cityEl = document.getElementById("#city");
+const searchEl = document.getElementById(".search");
+const clearEl = document.getElementById("clear-history");
+const nameEl = document.getElementById("city-name");
+const currentPicEl = document.getElementById("current-pic");
+const currentTempEl = document.getElementById("temperature");
+const currentHumidityEl = document.getElementById("humidity");4
+const currentWindEl = document.getElementById("wind-speed");
+const currentUVEl = document.getElementById("UV-index");
+const historyEl = document.getElementById("history");
+let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
+}
 
 //fetch request and console log for weather
 const apiKey = "2b5273ff9c8458a9e729503a2001b7f4";
+
+const cityResult = userFormEl.value;
+console.log(cityResult);
 
 const formSubmitHandler = function (event) {
   event.preventDefault();
