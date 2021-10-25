@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\css\styles.css" />
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+  <!--Navigation-->
+
+  <body>
+    <header>
+      <h1>
+        <a href="./index.html" class="nav-link">Home</a>
+      </h1>
+      <nav>
+        <ul></ul>
+      </nav>
+    </header>
+
+    <!--End Navigation-->
+    <div class="columns">
+      <div class="column is-one-third">
+        <form id="form" class="card-body">
+          <label class="form-label" for="city">Search for a City</label>
+          <input
+            name="city"
+            id="city"
+            type="text"
+            placeholder="San Diego"
+            autofocus="true"
+            class="form-input"
+          />
+          <button class="search" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="column is-two-thirds" id="display-weather-container">
+        hdhd
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-third" id="results-container">hd</div>
+      <div> 
+          <h3>5 Day Forecast</h3>
+        <div class="column">Auto</div>
+        <div class="column">Auto</div>
+        <div class="column">Auto</div>
+        <div class="column">Auto</div>
+        <div class="column">Auto</div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <h4>conley inc.</h4>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
